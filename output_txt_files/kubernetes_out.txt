@@ -1,4 +1,15 @@
-$ kubectl logs ml-microservice-56869ff57f-4n4cz
+$ ./run_kubernetes.sh
+
+NAME                               READY   STATUS    RESTARTS   AGE   IP           NODE       NOMINATED NODE   READINESS GATES
+ml-microservice-56869ff57f-qvjdg   1/1     Running   0          10m   172.17.0.3   minikube   <none>           <none>
+Forwarding from 127.0.0.1:8000 -> 80
+Forwarding from [::1]:8000 -> 80
+Handling connection for 8000
+Handling connection for 8000
+
+
+
+$ kubectl logs ml-microservice-56869ff57f-qvjdg
 
  * Serving Flask app "app" (lazy loading)
  * Environment: production
